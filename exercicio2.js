@@ -46,6 +46,14 @@ const multiplicacao = (array) => {
   return mult
 }
 
+const divisao = (dividendo, divisor) => {
+  if (typeof dividendo !== "number"
+  || typeof divisor !== "number"
+  || dividendo === 0) throw "Valores inseridos incorretos"
+  
+  return dividendo / divisor
+}
+
 // const funcoesElementares = {
 //   'adicao': adicao(),
 //   'subtração': 'oi',
