@@ -4,59 +4,52 @@
 // A função de subtração permite um array como parâmetro de entrada e subtrai todos os seus elementos.
 // Função de multiplicação - Idem
 // A função de divisão aceita dois parâmetros: a e b.
-const adicao = (array) => {
-  var sum = 0
 
-  if (!Array.isArray(array)) throw 'valor inserido não é um array'
+const funcoesElementares = {
+  'adicao': function(array) {
+    var sum = 0
 
-  array.map((elem) => {
-    if (typeof elem !== "number") throw 'todos os elementos não são numeros'
-  })
-
-  sum = array.reduce((total, currentValue) => total + currentValue)
-
-  return sum
-}
-
-const subtracao = (array) => {
-  var sub = 0
-
-  if (!Array.isArray(array)) throw 'valor inserido não é um array'
-
-  array.map((elem) => {
-    if (typeof elem !== "number") throw 'todos os elementos não são numeros'
-  })
-
-  sub = array.reduce((total, currentValue) => total - currentValue)
-
-  return sub
-}
-
-const multiplicacao = (array) => {
-  var mult = 0
-
-  if (!Array.isArray(array)) throw 'valor inserido não é um array'
-
-  array.map((elem) => {
-    if (typeof elem !== "number") throw 'todos os elementos não são numeros'
-  })
-
-  mult = array.reduce((total, currentValue) => total * currentValue)
-
-  return mult
-}
-
-const divisao = (dividendo, divisor) => {
-  if (typeof dividendo !== "number"
-  || typeof divisor !== "number"
-  || dividendo === 0) throw "Valores inseridos incorretos"
+    if (!Array.isArray(array)) throw 'valor inserido não é um array'
   
-  return dividendo / divisor
-}
+    array.map((elem) => {
+      if (typeof elem !== "number") throw 'todos os elementos não são numeros'
+    })
+  
+    sum = array.reduce((total, currentValue) => total + currentValue)
+  
+    return sum
+  },
+  'subtracao': function(array) {
+    var sub = 0
 
-// const funcoesElementares = {
-//   'adicao': adicao(),
-//   'subtração': 'oi',
-//   'multiplicação': 'oi',
-//   'divisão': 'oi',
-// }
+    if (!Array.isArray(array)) throw 'valor inserido não é um array'
+
+    array.map((elem) => {
+      if (typeof elem !== "number") throw 'todos os elementos não são numeros'
+    })
+
+    sub = array.reduce((total, currentValue) => total - currentValue)
+
+    return sub
+  },
+  'multiplicacao': function(array) {
+    var mult = 0
+
+    if (!Array.isArray(array)) throw 'valor inserido não é um array'
+
+    array.map((elem) => {
+      if (typeof elem !== "number") throw 'todos os elementos não são numeros'
+    })
+
+    mult = array.reduce((total, currentValue) => total * currentValue)
+
+    return mult
+  },
+  'divisao': function(dividendo, divisor) {
+    if (typeof dividendo !== "number"
+    || typeof divisor !== "number"
+    || dividendo === 0) throw "Valores inseridos incorretos"
+  
+    return dividendo / divisor
+  },
+}
