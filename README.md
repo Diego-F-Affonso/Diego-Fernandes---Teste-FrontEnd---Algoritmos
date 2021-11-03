@@ -39,7 +39,7 @@ Desafio técnico da empresa LexartLabs onde foi testado os conhecimentos sobre a
 
 Diego Fernandes Affonso
 
-Cel/wpp: [31 99971-8515](https://wa.me/5531999718515)
+Cel/wpp: [+55 31 99971-8515](https://wa.me/5531999718515)
 
 Linkedin: [Diego Fernandes Affonso](https://www.linkedin.com/in/diegofernandesaffonso/)
 
