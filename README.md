@@ -35,6 +35,15 @@ Desafio técnico da empresa LexartLabs onde foi testado os conhecimentos sobre a
    - let id = generarId()
    - id vale ~ abc1-bb12-234a-bcc2
 
+## Contato
+
+Diego Fernandes Affonso
+
+Cel/wpp: [31 99971-8515](https://wa.me/5531999718515)
+
+Linkedin: [Diego Fernandes Affonso](https://www.linkedin.com/in/diegofernandesaffonso/)
+
+email: diegofernandesaffonso@gmail.com
 
 **Free Software, Hell Yeah!**
 
