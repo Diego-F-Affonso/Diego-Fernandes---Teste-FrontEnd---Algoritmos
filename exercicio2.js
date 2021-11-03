@@ -4,3 +4,23 @@
 // A função de subtração permite um array como parâmetro de entrada e subtrai todos os seus elementos.
 // Função de multiplicação - Idem
 // A função de divisão aceita dois parâmetros: a e b.
+const adicao = (array) => {
+  var sum = 0
+
+  if (!Array.isArray(array)) throw 'valor inserido não é um array'
+
+  array.map((elem) => {
+    if (typeof elem !== "number") throw 'todos os elementos não são numeros'
+  })
+
+  sum = array.reduce((total, currentValue) => total + currentValue)
+
+  return sum
+}
+
+// const funcoesElementares = {
+//   'adicao': adicao(),
+//   'subtração': 'oi',
+//   'multiplicação': 'oi',
+//   'divisão': 'oi',
+// }
