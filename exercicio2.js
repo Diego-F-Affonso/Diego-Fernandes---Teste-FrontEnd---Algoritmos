@@ -19,7 +19,7 @@ const adicao = (array) => {
 }
 
 const subtracao = (array) => {
-  var sum = 0
+  var sub = 0
 
   if (!Array.isArray(array)) throw 'valor inserido não é um array'
 
@@ -27,9 +27,23 @@ const subtracao = (array) => {
     if (typeof elem !== "number") throw 'todos os elementos não são numeros'
   })
 
-  sum = array.reduce((total, currentValue) => total - currentValue)
+  sub = array.reduce((total, currentValue) => total - currentValue)
 
-  return sum
+  return sub
+}
+
+const multiplicacao = (array) => {
+  var mult = 0
+
+  if (!Array.isArray(array)) throw 'valor inserido não é um array'
+
+  array.map((elem) => {
+    if (typeof elem !== "number") throw 'todos os elementos não são numeros'
+  })
+
+  mult = array.reduce((total, currentValue) => total * currentValue)
+
+  return mult
 }
 
 // const funcoesElementares = {
