@@ -18,6 +18,20 @@ const adicao = (array) => {
   return sum
 }
 
+const subtracao = (array) => {
+  var sum = 0
+
+  if (!Array.isArray(array)) throw 'valor inserido não é um array'
+
+  array.map((elem) => {
+    if (typeof elem !== "number") throw 'todos os elementos não são numeros'
+  })
+
+  sum = array.reduce((total, currentValue) => total - currentValue)
+
+  return sum
+}
+
 // const funcoesElementares = {
 //   'adicao': adicao(),
 //   'subtração': 'oi',
